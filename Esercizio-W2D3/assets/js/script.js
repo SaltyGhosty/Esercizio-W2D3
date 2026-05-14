@@ -284,9 +284,9 @@ console.log(starWarsCharacters)
    Stampa: "Più alto: Darth Vader (202 cm)" e "Più basso: ...".
 */
 /*
-let piuGrande = Number(starWarsCharacters[0].height, 10);
+let piuGrande = Number(starWarsCharacters[0].height);
 let nomePiuGrande = starWarsCharacters[0].name;
-let piuBasso = Number(starWarsCharacters[0].height, 10);
+let piuBasso = Number(starWarsCharacters[0].height);
 let nomePiuBasso = starWarsCharacters[0].name;
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
@@ -294,7 +294,7 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
     if(altezza > piuGrande) {
         piuGrande = altezza;
         nomePiuGrande = starWarsCharacters[i].name;
-     } else if (altezza < piuBasso) {
+     } if (altezza < piuBasso) {
         piuBasso = altezza;
         nomePiuBasso = starWarsCharacters[i].name;
     }
@@ -340,6 +340,10 @@ for (const colore in perColoreOcchi){
     console.log(`${colore}: ${perColoreOcchi[colore].length} personaggi`);
 }
 */
+
+
+
+
 
 
 
