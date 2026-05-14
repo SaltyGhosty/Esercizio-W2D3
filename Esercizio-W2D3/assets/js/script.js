@@ -114,7 +114,7 @@ const starWarsCharacters = [
    Stampa "nomi".
 */
 
-/*
+/* 
     const nomi = [];
     
     for (let i = 0; i < starWarsCharacters.length; i++) {
@@ -124,17 +124,17 @@ const starWarsCharacters = [
      console.log(nomi);
 
 
-*/
 
+*/
 /* ESERCIZIO 2 — Solo i femminili
 Array vuoto "personaggiFemminili". Con un for + if (gender === "female"),
 crea un nuovo oggetto { name, hair_color, eye_color } e fai push.
 Stampa.
 */
 
+
+
 /* 
-
-
 const personaggiFemminili = [];
 
 for (let i = 0; i < starWarsCharacters.length; i++) {
@@ -149,8 +149,8 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
 }
 
 console.log(personaggiFemminili);
-*/
 
+*/
 
 
 /* ESERCIZIO 3 — Oggetto raggruppamento
@@ -308,16 +308,18 @@ for (let i = 0; i < starWarsCharacters.length; i++) {
    Quando combaciano per nome, rimuovi quel nome da nomi con splice.
    Stampa lunghezza prima e dopo.
 */
-/* 
+/*
+console.log(`lunghezza prima: ${nomi.length}`);
+ for(let i = 0;i < nomi.length; i++) {
+    for (let j = 0;j < personaggiFemminili.length;j ++){
+        if (nomi[i] === personaggiFemminili[j].name) {
+            nomi.splice(i, 1);
+        }
+    }
+ }
 
-for (let i = 0; i < nomi.length; i++) {
-  if (nomi[i].gender === "female");{
-    nomi.splice(i, 1);
+*/
 
-  }
-}
-console.log(nomi);
-  */
 
 /* ESERCIZIO 10 — Personaggio casuale
    indice = Math.floor(Math.random() * starWarsCharacters.length)
@@ -340,9 +342,6 @@ for (const colore in perColoreOcchi){
     console.log(`${colore}: ${perColoreOcchi[colore].length} personaggi`);
 }
 */
-
-
-
 
 
 
